@@ -1,4 +1,4 @@
-$('#main-container').on('click', async function (event) {
+$('.button').on('click', async function (event) {
     event.preventDefault();
     $('#main-texto').css("display", "none");
     let inputDate = $('#dia').val();
