@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
+body,html{
+    height: 100%;
+    width: 100%;  
+}
+body{
+    background-color: black;
+    color: white;
+    background-image: url(./bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin:0px;
+    font-family: 'Oswald', sans-serif;
+    
+}
+#cabecalho-container{
+    text-align: center;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    height: 10%;
+}
+#main-container{
+    display: flex;
+    height: 85%;
+    justify-content: center;
+    align-items: center;
+}
+#main-data{
+    display: flex;
+    justify-content: space-evenly;
+    width: 40%;
+}
+#main-titulo{
+    width: 40%;
+}
+#main-texto{
+    font-size: 22px;
+    width: 40%;
+    text-align: justify;
+}
+
+#rodape-container{
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 5%;
+    background-color: rgb(255, 255, 255);
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-size: large;
+}
+#texto-nasa{
+    font-size: 22px;
+    width: 40%;
+    text-align: justify;
+    display: none;
+}
+@media (max-width: 700px){
+    body{
+        background-size: auto;
+    }
+    #cabecalho-container{
+        height: 15%;
+    }
+    #main-container{
+        flex-direction: column;
+        height: 80%;
+    }
+    #main-texto{
+        width: 90%;
+        font-size: 15px;
+    }
+    #texto-nasa{
+        width: 90%;
+        font-size: 15px;
+    }
+}
